@@ -78,6 +78,11 @@ This repository contains **only the public APX-OMS product website**, served fro
 
 When publication is approved, configure **Settings → Pages → Deploy from a branch → `main` → `/docs`**. The site entrypoint is `docs/index.html`. The site does not collect credentials or require a backend.
 
+## Project owner
+
+**Chamila T. Gamage** — APX-OMS project owner.  
+LinkedIn: [Chamila T. Gamage](https://www.linkedin.com/in/chamila-t-gamage/)
+
 ## Licensing and security
 
 The APX name, logo, and branding are not granted for third-party reuse. The website hero uses a generated illustration of a conceptual garment factory, not an image of an actual APX-OMS facility or any real people. No open-source or redistribution license is granted merely by the repository being public.
