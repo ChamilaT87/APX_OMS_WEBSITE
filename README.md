@@ -10,18 +10,21 @@ APX-OMS is a **modular apparel enterprise platform in development**, designed to
 
 Apparel businesses coordinate changes across commercial teams, technical development, procurement, production planning, factories, quality and logistics. APX-OMS is being developed around shared identity, clear authority, versioned product definitions and traceable operational decisions.
 
-### Six planned capability areas
+### Seven planned first-class domains
 
 | Domain | Intended capability | Delivery status |
 | --- | --- | --- |
-| **ERP** | Commercial, product, material and connected enterprise operations | Planned product domain |
+| **ERP** | Commercial records, material control and connected enterprise operations | Planned product domain |
 | **MES** | Manufacturing execution, work-in-progress events, quality and traceability | Planned product domain |
 | **APS / PPC** | Demand allocation, capacity, loading and production planning | Planned product domain |
 | **CRM** | Customer relationship management and commercial coordination | Planned product domain |
 | **HRM** | Workforce identities, organizational structures and people processes | Planned product domain |
-| **FI/CO** | Financial accounting, manufacturing costing, budgeting, reporting and financial controls | Planned ERP capability |
+| **PLM** | Product Lifecycle Management: controlled product definition, technical revisions and product release | Planned product domain |
+| **Finance** | Financial accounting and controlling (FI/CO), manufacturing costing, budgeting, reporting and financial controls | Planned product domain |
 
-FI/CO is a **first-class functional capability within ERP**, not an unrelated financial platform. These six capability areas describe **target product scope**, not fully deployed modules.
+ERP, MES, APS/PPC, CRM, HRM, PLM and Finance are seven first-class domains in the approved APX-OMS architecture. FI/CO describes planned functionality within the Finance domain.
+
+The public website retains six overview cards. That presentation does not reduce the seven-domain architecture or place PLM or Finance under ERP. These domains describe target product scope, not completed or deployed modules.
 
 ## Architecture principles
 
@@ -30,13 +33,13 @@ FI/CO is a **first-class functional capability within ERP**, not an unrelated fi
 3. **Products and technical definitions are version-controlled.** Manufacturing release is a separate controlled gate.
 4. **Planning allocation and manufacturing execution have distinct ownership.** Demand, manufacturing orders and execution records are not interchangeable.
 5. **Audit evidence matters.** Accepted actions must be attributable and verifiable.
-6. **Domains are modular.** Commercial, manufacturing, planning, CRM, HRM and ERP financial/controlling capabilities will mature through governed releases.
+6. **Domains are modular.** ERP, MES, APS/PPC, CRM, HRM, PLM and Finance are first-class domains intended to mature through governed releases, with explicit responsibilities and cross-domain handoffs.
 
 ## Current Foundation verification
 
 The defined local Foundation test scope includes authentication, organization membership and selection, scoped resource access, protected routes and related audit behavior. The original automated browser UAT recorded **16/16 passing cases**. The later live Django / Microsoft Edge responsive login verification recorded **6/6 passing viewports**, including the agreed first-view no-scroll mobile requirement for those tested sizes.
 
-These are **bounded local test observations**. They are not evidence of completed ERP, MES, APS/PPC, CRM, HRM or FI/CO capabilities, external penetration-test certification, accessibility compliance across all devices, or production deployment readiness.
+These are **bounded local test observations**. They are not evidence of completed capabilities across ERP, MES, APS/PPC, CRM, HRM, PLM or Finance, external penetration-test certification, accessibility compliance across all devices, or production deployment readiness.
 
 ### Governance state
 
@@ -64,7 +67,7 @@ This is the **approved design direction**, not a claim that the entire workflow 
 | Stage | Focus |
 | --- | --- |
 | Foundation | Governed identity, organization scope, security controls, local verification and acceptance |
-| Domain development | Build and verify commercial, product, manufacturing, planning, CRM, HRM and FI/CO operational workspaces |
+| Domain development | Develop and verify workspaces across ERP, MES, APS/PPC, CRM, HRM, PLM and Finance through governed releases |
 | Integration | Validate cross-domain boundaries, authority, exceptions and end-to-end scenarios |
 | Product release | Commercialization, deployment and subscriptions only after applicable release approval |
 
